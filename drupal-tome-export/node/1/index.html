@@ -6,128 +6,19 @@
 <meta name="MobileOptimized" content="width" />
 <meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="shortcut icon" href="/drupal-tome-export/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="canonical" href="/node/1" />
 <link rel="shortlink" href="/node/1" />
 <link rel="revision" href="/node/1" />
 
-    <title>Example Article | Drush Site-Install</title>
-    <style media="all">
-@import url("/core/assets/vendor/normalize-css/normalize.css?ppt4hz");
-@import url("/core/misc/normalize-fixes.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/ajax-progress.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/align.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/autocomplete-loading.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/fieldgroup.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/container-inline.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/clearfix.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/details.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/hidden.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/item-list.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/js.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/nowrap.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/position-container.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/progress.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/reset-appearance.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/resize.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/sticky-header.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/system-status-counter.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/system-status-report-counters.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/system-status-report-general-info.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/tabledrag.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/tablesort.module.css?ppt4hz");
-@import url("/core/themes/stable/css/system/components/tree-child.module.css?ppt4hz");
-</style>
-<style media="all">
-@import url("/core/themes/bartik/css/base/elements.css?ppt4hz");
-@import url("/core/themes/bartik/css/layout.css?ppt4hz");
-@import url("/core/themes/classy/css/components/action-links.css?ppt4hz");
-@import url("/core/themes/classy/css/components/breadcrumb.css?ppt4hz");
-@import url("/core/themes/classy/css/components/button.css?ppt4hz");
-@import url("/core/themes/classy/css/components/collapse-processed.css?ppt4hz");
-@import url("/core/themes/classy/css/components/container-inline.css?ppt4hz");
-@import url("/core/themes/classy/css/components/details.css?ppt4hz");
-@import url("/core/themes/classy/css/components/exposed-filters.css?ppt4hz");
-@import url("/core/themes/classy/css/components/field.css?ppt4hz");
-@import url("/core/themes/classy/css/components/form.css?ppt4hz");
-@import url("/core/themes/classy/css/components/icons.css?ppt4hz");
-@import url("/core/themes/classy/css/components/inline-form.css?ppt4hz");
-@import url("/core/themes/classy/css/components/item-list.css?ppt4hz");
-@import url("/core/themes/classy/css/components/link.css?ppt4hz");
-@import url("/core/themes/classy/css/components/links.css?ppt4hz");
-@import url("/core/themes/classy/css/components/menu.css?ppt4hz");
-@import url("/core/themes/classy/css/components/more-link.css?ppt4hz");
-@import url("/core/themes/classy/css/components/pager.css?ppt4hz");
-@import url("/core/themes/classy/css/components/tabledrag.css?ppt4hz");
-@import url("/core/themes/classy/css/components/tableselect.css?ppt4hz");
-@import url("/core/themes/classy/css/components/tablesort.css?ppt4hz");
-@import url("/core/themes/classy/css/components/tabs.css?ppt4hz");
-@import url("/core/themes/classy/css/components/textarea.css?ppt4hz");
-@import url("/core/themes/classy/css/components/ui-dialog.css?ppt4hz");
-@import url("/core/themes/classy/css/components/messages.css?ppt4hz");
-@import url("/core/themes/classy/css/components/node.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/block.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/book.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/breadcrumb.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/captions.css?ppt4hz");
-</style>
-<style media="all">
-@import url("/core/themes/bartik/css/components/comments.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/contextual.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/demo-block.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/dropbutton.component.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/featured-top.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/feed-icon.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/field.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/form.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/forum.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/header.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/help.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/highlighted.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/item-list.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/list-group.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/list.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/main-content.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/menu.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/messages.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/node.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/node-preview.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/page-title.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/pager.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/panel.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/primary-menu.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/search-form.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/search-results.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/secondary-menu.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/shortcut.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/skip-link.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/sidebar.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/site-branding.css?ppt4hz");
-</style>
-<style media="all">
-@import url("/core/themes/bartik/css/components/site-footer.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/table.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/tablesort-indicator.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/tabs.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/text-formatted.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/toolbar.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/featured-bottom.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/password-suggestions.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/ui.widget.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/vertical-tabs.component.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/views.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/buttons.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/image-button.css?ppt4hz");
-@import url("/core/themes/bartik/css/components/ui-dialog.css?ppt4hz");
-@import url("/core/themes/bartik/css/colors.css?ppt4hz");
-</style>
-<style media="print">
-@import url("/core/themes/bartik/css/print.css?ppt4hz");
-</style>
+    <title>Example Article | Static Drupal</title>
+    <link rel="stylesheet" href="/drupal-tome-export/sites/default/files/css/css_-Vz-w431xSMk8ULHi876FKapUrHIKzVXrn6lCfSFi68.css?ppt4hz" media="all" />
+<link rel="stylesheet" href="/drupal-tome-export/sites/default/files/css/css_L2r-zdgcFPoyIEUHBfoZP1u-WzmTVvNBp3ABICRVqDg.css?ppt4hz" media="all" />
+<link rel="stylesheet" href="/drupal-tome-export/sites/default/files/css/css_Z5jMg7P_bjcW9iUzujI7oaechMyxQTUqZhHJ_aYSq04.css?ppt4hz" media="print" />
 
     
 <!--[if lte IE 8]>
-<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<script src="/drupal-tome-export/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
 <![endif]-->
 
   </head>
@@ -171,13 +62,14 @@
   
     
         <a href="/" title="Home" rel="home" class="site-branding__logo">
-      <img src="/core/themes/bartik/logo.svg" alt="Home" />
+      <img src="/drupal-tome-export/core/themes/bartik/logo.svg" alt="Home" />
     </a>
         <div class="site-branding__text">
               <div class="site-branding__name">
-          <a href="/" title="Home" rel="home">Drush Site-Install</a>
+          <a href="/" title="Home" rel="home">Static Drupal</a>
         </div>
-                </div>
+                    <div class="site-branding__slogan">Static site generated by Drupal and Tome</div>
+          </div>
   </div>
 
   </div>
@@ -243,7 +135,7 @@
           <section class="section">
             <a id="main-content" tabindex="-1"></a>
               <div class="region region-content">
-    <div id="block-bartik-page-title--2" class="block block-core block-page-title-block">
+    <div id="block-bartik-page-title" class="block block-core block-page-title-block">
   
     
       <div class="content">
@@ -254,7 +146,7 @@
 
     </div>
   </div>
-<div id="block-bartik-content--2" class="block block-system block-system-main-block">
+<div id="block-bartik-content" class="block block-system block-system-main-block">
   
     
       <div class="content">
@@ -279,7 +171,7 @@
       </header>
   <div class="node__content clearfix">
     
-            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  <img property="schema:image" src="/sites/default/files/styles/large/public/2019-04/39187624475_2b70169607_o.jpg?itok=GJ-SaimD" width="480" height="320" alt="Portland, ME" typeof="foaf:Image" class="image-style-large" />
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  <img property="schema:image" src="/drupal-tome-export/sites/default/files/styles/large/public/2019-04/39187624475_2b70169607_o.jpg?itok=GJ-SaimD" width="480" height="320" alt="Portland, ME" typeof="foaf:Image" class="image-style-large" />
 
 
 </div>

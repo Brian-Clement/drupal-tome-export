@@ -8,124 +8,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="shortcut icon" href="/drupal-tome-export/core/misc/favicon.ico" type="image/vnd.microsoft.icon" />
 
-    <title>Create new account | Drush Site-Install</title>
-    <style media="all">
-@import url("/drupal-tome-export/core/assets/vendor/normalize-css/normalize.css?ppt4hz");
-@import url("/drupal-tome-export/core/misc/normalize-fixes.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/ajax-progress.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/align.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/autocomplete-loading.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/fieldgroup.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/container-inline.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/clearfix.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/details.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/hidden.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/item-list.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/js.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/nowrap.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/position-container.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/progress.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/reset-appearance.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/resize.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/sticky-header.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/system-status-counter.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/system-status-report-counters.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/system-status-report-general-info.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/tabledrag.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/tablesort.module.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/stable/css/system/components/tree-child.module.css?ppt4hz");
-</style>
-<style media="all">
-@import url("/drupal-tome-export/core/themes/bartik/css/base/elements.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/layout.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/action-links.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/breadcrumb.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/button.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/collapse-processed.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/container-inline.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/details.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/exposed-filters.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/field.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/form.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/icons.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/inline-form.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/item-list.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/link.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/links.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/menu.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/more-link.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/pager.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/tabledrag.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/tableselect.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/tablesort.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/tabs.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/textarea.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/ui-dialog.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/messages.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/file.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/classy/css/components/progress.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/block.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/book.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/breadcrumb.css?ppt4hz");
-</style>
-<style media="all">
-@import url("/drupal-tome-export/core/themes/bartik/css/components/captions.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/comments.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/contextual.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/demo-block.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/dropbutton.component.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/featured-top.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/feed-icon.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/field.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/form.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/forum.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/header.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/help.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/highlighted.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/item-list.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/list-group.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/list.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/main-content.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/menu.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/messages.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/node.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/node-preview.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/page-title.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/pager.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/panel.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/primary-menu.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/search-form.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/search-results.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/secondary-menu.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/shortcut.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/skip-link.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/sidebar.css?ppt4hz");
-</style>
-<style media="all">
-@import url("/drupal-tome-export/core/themes/bartik/css/components/site-branding.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/site-footer.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/table.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/tablesort-indicator.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/tabs.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/text-formatted.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/toolbar.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/featured-bottom.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/password-suggestions.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/ui.widget.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/vertical-tabs.component.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/views.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/buttons.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/image-button.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/components/ui-dialog.css?ppt4hz");
-@import url("/drupal-tome-export/core/themes/bartik/css/colors.css?ppt4hz");
-</style>
-<style media="print">
-@import url("/drupal-tome-export/core/themes/bartik/css/print.css?ppt4hz");
-</style>
+    <title>Create new account | Static Drupal</title>
+    <link rel="stylesheet" href="/drupal-tome-export/sites/default/files/css/css_-Vz-w431xSMk8ULHi876FKapUrHIKzVXrn6lCfSFi68.css?ppt4hz" media="all" />
+<link rel="stylesheet" href="/drupal-tome-export/sites/default/files/css/css_gC5OchSMh3KroW_z4xtJtwplYZNxq2QX33B7j8iMzFQ.css?ppt4hz" media="all" />
+<link rel="stylesheet" href="/drupal-tome-export/sites/default/files/css/css_Z5jMg7P_bjcW9iUzujI7oaechMyxQTUqZhHJ_aYSq04.css?ppt4hz" media="print" />
 
     
 <!--[if lte IE 8]>
-<script src="/drupal-tome-export/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<script src="/drupal-tome-export/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
 <![endif]-->
 <script src="/drupal-tome-export/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
 
@@ -170,13 +60,14 @@
   
     
         <a href="/" title="Home" rel="home" class="site-branding__logo">
-      <img src="/core/themes/bartik/logo.svg" alt="Home" />
+      <img src="/drupal-tome-export/core/themes/bartik/logo.svg" alt="Home" />
     </a>
         <div class="site-branding__text">
               <div class="site-branding__name">
-          <a href="/" title="Home" rel="home">Drush Site-Install</a>
+          <a href="/" title="Home" rel="home">Static Drupal</a>
         </div>
-                </div>
+                    <div class="site-branding__slogan">Static site generated by Drupal and Tome</div>
+          </div>
   </div>
 
   </div>
@@ -304,7 +195,7 @@
     </div>
   </div>
 </div></div>
-<input autocomplete="off" data-drupal-selector="form-6szixzegwdudb7txa3dodi-trgnupw9l988crpqgi" type="hidden" name="form_build_id" value="form-6szixzeGWduDB7TxA3DodI_-_trGnupW9l988cRpQGI" />
+<input autocomplete="off" data-drupal-selector="form-yg-hfdvwoct1ba-gar3gickpaax8w2ltj86xxcfhmq" type="hidden" name="form_build_id" value="form--yG-hFdVwoCt1BA_GAr3GicKPaaX8w2ltJ86xXcFhmQ" />
 <input data-drupal-selector="edit-user-register-form" type="hidden" name="form_id" value="user_register_form" />
 <details data-drupal-selector="edit-contact" id="edit-contact" class="js-form-wrapper form-wrapper" open="open">    <summary role="button" aria-controls="edit-contact" aria-expanded="true" aria-pressed="true">Contact settings</summary><div class="details-wrapper">
     <div class="js-form-item form-item js-form-type-checkbox form-type-checkbox js-form-item-contact form-item-contact">
@@ -413,22 +304,7 @@
 
     
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","ajaxPageState":{"libraries":"bartik\/global-styling,classy\/base,classy\/messages,core\/drupal.ajax,core\/drupal.collapse,core\/drupal.timezone,core\/html5shiv,core\/jquery.form,core\/normalize,file\/drupal.file,system\/base","theme":"bartik","theme_token":null},"ajaxTrustedUrl":{"\/search\/node":true,"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/user\/register?element_parents=user_picture\/widget\/0\u0026ajax_form=1":true},"ajax":{"edit-user-picture-0-upload-button":{"callback":["Drupal\\file\\Element\\ManagedFile","uploadAjaxCallback"],"wrapper":"ajax-wrapper","effect":"fade","progress":{"type":"throbber","message":null},"event":"mousedown","keypress":true,"prevent":"click","url":"\/user\/register?element_parents=user_picture\/widget\/0\u0026ajax_form=1","dialogType":"ajax","submit":{"_triggering_element_name":"user_picture_0_upload_button","_triggering_element_value":"Upload"}}},"file":{"elements":{"#edit-user-picture-0":"png,gif,jpg,jpeg"}},"user":{"uid":0,"permissionsHash":"3ed4ac62b5d6c19fa3911e68fbde9081dd70cadd983dae5d015937a9dc1f85cd"}}</script>
-<script src="/drupal-tome-export/core/assets/vendor/domready/ready.min.js?v=1.0.8"></script>
-<script src="/drupal-tome-export/core/assets/vendor/jquery/jquery.min.js?v=3.2.1"></script>
-<script src="/drupal-tome-export/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.0"></script>
-<script src="/drupal-tome-export/core/misc/drupalSettingsLoader.js?v=8.6.14"></script>
-<script src="/drupal-tome-export/core/misc/drupal.js?v=8.6.14"></script>
-<script src="/drupal-tome-export/core/misc/drupal.init.js?v=8.6.14"></script>
-<script src="/drupal-tome-export/core/misc/debounce.js?v=8.6.14"></script>
-<script src="/drupal-tome-export/core/assets/vendor/jquery.cookie/jquery.cookie.min.js?v=1.4.1"></script>
-<script src="/drupal-tome-export/core/misc/form.js?v=8.6.14"></script>
-<script src="/drupal-tome-export/core/misc/timezone.js?v=8.6.14"></script>
-<script src="/drupal-tome-export/core/misc/details-aria.js?v=8.6.14"></script>
-<script src="/drupal-tome-export/core/misc/collapse.js?v=8.6.14"></script>
-<script src="/drupal-tome-export/core/modules/file/file.js?v=8.6.14"></script>
-<script src="/drupal-tome-export/core/assets/vendor/jquery-form/jquery.form.min.js?v=4.22"></script>
-<script src="/drupal-tome-export/core/misc/progress.js?v=8.6.14"></script>
-<script src="/drupal-tome-export/core/misc/ajax.js?v=8.6.14"></script>
+<script src="/drupal-tome-export/sites/default/files/js/js_7NawyYWc8ETqBjETpxLBIU8P0pyNiZ16LyR5ki-jsHc.js"></script>
 
   </body>
 </html>
